@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ipodtouch4代-经典回顾、系统版本与实用使用指南</title>
+<meta name="description" content="围绕 iPod touch 4 代整理的产品回顾与使用指南，包括硬件特点、系统版本、常见用途、二手选购注意点和常见问题，帮助仍在关注这款经典设备的用户快速了解它的定位与价值。">
+<meta name="keywords" content="ipodtouch4代,iPod touch 4,iPod touch 第四代,苹果播放器,经典设备,二手选购">
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+<style>
+:root{
+  --ink:#1c1f26;
+  --ink-soft:#4d5566;
+  --line:#e3e6ec;
+  --bg:#f6f7fb;
+  --card:#ffffff;
+  --accent:#3a6df0;
+  --accent-deep:#2549b0;
+  --accent-soft:#eaf0ff;
+  --silver:#c9cedb;
+  --radius:14px;
+  --shadow:0 6px 22px rgba(28,31,38,.08);
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  margin:0;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  color:var(--ink);
+  background:var(--bg);
+  line-height:1.75;
+  font-size:16px;
+}
+a{color:inherit;text-decoration:none;}
+img{max-width:100%;}
+.wrap{width:100%;max-width:1140px;margin:0 auto;padding:0 20px;}
+
+/* ---------- 页眉 ---------- */
+.site-header{
+  position:sticky;top:0;z-index:50;
+  background:rgba(255,255,255,.92);
+  backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--line);
+}
+.header-inner{
+  display:flex;align-items:center;justify-content:space-between;
+  gap:18px;min-height:64px;flex-wrap:wrap;
+}
+.brand{display:flex;align-items:center;gap:12px;}
+.brand-mark{
+  width:38px;height:38px;border-radius:10px;
+  background:linear-gradient(150deg,#5b86ff,#2549b0);
+  display:flex;align-items:center;justify-content:center;
+  color:#fff;font-weight:700;font-size:15px;letter-spacing:.5px;
+  box-shadow:0 4px 12px rgba(37,73,176,.32);
+}
+.brand-text strong{display:block;font-size:17px;letter-spacing:.3px;}
+.brand-text span{display:block;font-size:12px;color:var(--ink-soft);letter-spacing:1px;}
+.main-nav{display:flex;gap:6px;flex-wrap:wrap;}
+.main-nav a{
+  padding:8px 13px;border-radius:9px;font-size:14.5px;color:var(--ink-soft);
+  transition:.18s;
+}
+.main-nav a:hover{background:var(--accent-soft);color:var(--accent-deep);}
+
+/* ---------- 首屏 ---------- */
+.hero{
+  background:linear-gradient(165deg,#1b2440 0%,#2b3a68 52%,#3a5192 100%);
+  color:#fff;padding:56px 0 50px;position:relative;overflow:hidden;
+}
+.hero::after{
+  content:"";position:absolute;right:-120px;top:-90px;
+  width:420px;height:420px;border-radius:50%;
+  background:radial-gradient(circle,rgba(120,160,255,.35),transparent 68%);
+}
+.hero-grid{
+  display:grid;grid-template-columns:1.35fr .95fr;gap:40px;
+  align-items:center;position:relative;z-index:2;
+}
+.hero h1{
+  font-size:clamp(26px,3.6vw,40px);
+  line-height:1.35;margin:0 0 16px;letter-spacing:.5px;
+}
+.hero h1 em{font-style:normal;color:#a9c2ff;}
+.hero p.lead{
+  margin:0 0 22px;font-size:16.5px;color:#d7ddf0;max-width:620px;
+}
+.hero-tags{display:flex;flex-wrap:wrap;gap:9px;margin-bottom:26px;}
+.hero-tags span{
+  font-size:13px;padding:5px 12px;border-radius:20px;
+  background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.22);
+  color:#e6ecff;
+}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;}
+.btn{
+  display:inline-block;padding:11px 22px;border-radius:10px;
+  font-size:15px;font-weight:600;transition:.18s;border:1px solid transparent;
+}
+.btn-primary{background:#fff;color:#22315c;}
+.btn-primary:hover{background:#e8eeff;transform:translateY(-1px);}
+.btn-ghost{border-color:rgba(255,255,255,.45);color:#fff;}
+.btn-ghost:hover{background:rgba(255,255,255,.12);}
+
+.device-card{
+  background:rgba(255,255,255,.09);
+  border:1px solid rgba(255,255,255,.2);
+  border-radius:18px;padding:22px;
+  backdrop-filter:blur(6px);
+}
+.device-card h2{
+  font-size:15px;margin:0 0 14px;color:#cfd9f5;font-weight:600;letter-spacing:.6px;
+}
+.spec-row{
+  display:flex;justify-content:space-between;gap:12px;
+  padding:9px 0;border-bottom:1px dashed rgba(255,255,255,.16);font-size:14.5px;
+}
+.spec-row:last-child{border-bottom:none;}
+.spec-row span:first-child{color:#b8c4e4;}
+.spec-row span:last-child{color:#fff;font-weight:600;text-align:right;}
+
+/* ---------- 通用区块 ---------- */
+section{padding:52px 0;}
+.section-head{margin-bottom:28px;}
+.section-head h2{
+  font-size:23px;margin:0 0 8px;letter-spacing:.4px;
+}
+.section-head p{margin:0;color:var(--ink-soft);font-size:15px;max-width:760px;}
+.eyebrow{
+  display:inline-block;font-size:12.5px;letter-spacing:1.6px;
+  color:var(--accent-deep);background:var(--accent-soft);
+  padding:4px 11px;border-radius:6px;margin-bottom:12px;font-weight:600;
+}
+
+/* ---------- 概览卡 ---------- */
+.overview-grid{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px;
+}
+.overview-card{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  padding:22px;box-shadow:var(--shadow);
+}
+.overview-card h3{
+  font-size:16.5px;margin:0 0 10px;display:flex;align-items:center;gap:9px;
+}
+.dot{
+  width:9px;height:9px;border-radius:50%;background:var(--accent);flex:none;
+}
+.overview-card p{margin:0;font-size:14.5px;color:var(--ink-soft);}
+
+/* ---------- 版本表格 ---------- */
+.table-scroll{overflow-x:auto;border-radius:var(--radius);border:1px solid var(--line);background:var(--card);}
+table{width:100%;border-collapse:collapse;min-width:600px;font-size:14.5px;}
+thead th{
+  background:#f0f3fa;color:#2b3350;text-align:left;
+  padding:13px 16px;font-weight:600;white-space:nowrap;
+}
+tbody td{padding:13px 16px;border-top:1px solid var(--line);color:var(--ink-soft);}
+tbody tr:hover{background:#fafbff;}
+tbody td:first-child{color:var(--ink);font-weight:600;}
+
+/* ---------- 用途列表 ---------- */
+.usage-grid{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;
+}
+.usage-item{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  padding:20px 22px;position:relative;box-shadow:var(--shadow);
+}
+.usage-item .num{
+  font-size:13px;font-weight:700;color:var(--accent-deep);
+  background:var(--accent-soft);border-radius:7px;padding:3px 9px;
+  display:inline-block;margin-bottom:11px;letter-spacing:.5px;
+}
+.usage-item h3{margin:0 0 8px;font-size:16px;}
+.usage-item p{margin:0;font-size:14.5px;color:var(--ink-soft);}
+
+/* ---------- 选购建议 ---------- */
+.buy-layout{
+  display:grid;grid-template-columns:1.1fr .9fr;gap:26px;align-items:start;
+}
+.check-list{list-style:none;padding:0;margin:0;}
+.check-list li{
+  background:var(--card);border:1px solid var(--line);border-radius:11px;
+  padding:14px 18px 14px 46px;margin-bottom:12px;position:relative;
+  font-size:14.8px;color:var(--ink-soft);
+}
+.check-list li::before{
+  content:"✓";position:absolute;left:16px;top:13px;
+  width:20px;height:20px;border-radius:50%;
+  background:var(--accent-soft);color:var(--accent-deep);
+  font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;
+}
+.check-list li strong{color:var(--ink);}
+.notice-box{
+  background:#fff8ec;border:1px solid #f4dcb0;border-radius:var(--radius);
+  padding:20px 22px;
+}
+.notice-box h3{margin:0 0 10px;font-size:16px;color:#8a5a10;}
+.notice-box ul{margin:0;padding-left:19px;font-size:14.5px;color:#7a6229;}
+.notice-box li{margin-bottom:7px;}
+
+/* ---------- 常见问题 ---------- */
+.faq-list{display:grid;gap:12px;}
+details{
+  background:var(--card);border:1px solid var(--line);border-radius:12px;
+  padding:0 20px;box-shadow:var(--shadow);
+}
+details[open]{border-color:#c6d5fa;}
+summary{
+  cursor:pointer;list-style:none;padding:16px 0;font-weight:600;font-size:15.5px;
+  display:flex;justify-content:space-between;align-items:center;gap:14px;
+}
+summary::-webkit-details-marker{display:none;}
+summary::after{
+  content:"+";color:var(--accent);font-size:19px;font-weight:700;flex:none;
+  transition:.2s;
+}
+details[open] summary::after{content:"−";}
+details p{margin:0 0 18px;font-size:14.8px;color:var(--ink-soft);}
+
+/* ---------- 侧栏提示 ---------- */
+.tips-band{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  padding:26px 24px;box-shadow:var(--shadow);
+}
+.tips-band h2{font-size:19px;margin:0 0 14px;}
+.tips-band p{margin:0 0 12px;font-size:14.8px;color:var(--ink-soft);}
+.tips-band p:last-child{margin-bottom:0;}
+
+/* ---------- 页脚 ---------- */
+.site-footer{
+  background:#1b2440;color:#b9c3dd;padding:40px 0 26px;margin-top:20px;
+}
+.footer-grid{
+  display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:30px;margin-bottom:26px;
+}
+.site-footer h3{color:#fff;font-size:15px;margin:0 0 12px;letter-spacing:.5px;}
+.site-footer p{font-size:14px;margin:0;line-height:1.8;}
+.site-footer ul{list-style:none;padding:0;margin:0;}
+.site-footer li{margin-bottom:8px;font-size:14px;}
+.site-footer a:hover{color:#fff;}
+.footer-bottom{
+  border-top:1px solid rgba(255,255,255,.12);padding-top:18px;
+  font-size:13px;color:#8d99b8;display:flex;justify-content:space-between;
+  gap:12px;flex-wrap:wrap;
+}
+
+/* ---------- 响应式 ---------- */
+@media (max-width:900px){
+  .hero-grid{grid-template-columns:1fr;}
+  .buy-layout{grid-template-columns:1fr;}
+  .footer-grid{grid-template-columns:1fr 1fr;}
+}
+@media (max-width:640px){
+  body{font-size:15.5px;}
+  section{padding:40px 0;}
+  .hero{padding:42px 0 38px;}
+  .header-inner{min-height:auto;padding:10px 0;}
+  .main-nav a{padding:7px 10px;font-size:13.5px;}
+  .footer-grid{grid-template-columns:1fr;}
+  .spec-row{font-size:13.8px;}
+}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <div class="brand">
+      <div class="brand-mark">iT4</div>
+      <div class="brand-text">
+        <strong>iPod touch 4 代资料站</strong>
+        <span>经典回顾 · 使用参考</span>
+      </div>
+    </div>
+    <nav class="main-nav" aria-label="主导航">
+      <a href="#overview">设备概览</a>
+      <a href="#versions">系统版本</a>
+      <a href="#usage">使用场景</a>
+      <a href="#buying">选购建议</a>
+      <a href="#faq">常见问题</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- 首屏 -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <h1>iPod touch 4 代：一款仍被怀念的<em>经典触屏播放器</em></h1>
+        <p class="lead">
+          如果你正在搜索 iPod touch 4 代，大概率是想了解它的硬件规格、能升级到哪个系统版本、现在还能拿来做什么，或者打算入手一台二手机。本文围绕这些实际问题展开，把它的定位、能力边界和注意事项讲清楚，不夸大也不贬低。
+        </p>
+        <div class="hero-tags">
+          <span>第四代 touch</span>
+          <span>Retina 显示屏</span>
+          <span>双摄像头</span>
+          <span>经典 iOS 设备</span>
+        </div>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#overview">先看设备概览</a>
+          <a class="btn btn-ghost" href="#buying">二手选购要点</a>
+        </div>
+      </div>
+      <aside class="device-card" aria-label="设备关键信息">
+        <h2>关键信息速览</h2>
+        <div class="spec-row"><span>产品类型</span><span>便携式多媒体播放器</span></div>
+        <div class="spec-row"><span>屏幕</span><span>3.5 英寸 Retina 触控屏</span></div>
+        <div class="spec-row"><span>摄像头</span><span>前后双摄</span></div>
+        <div class="spec-row"><span>系统支持</span><span>止步于 iOS 6 系列</span></div>
+        <div class="spec-row"><span>当前定位</span><span>怀旧、离线播放、收藏</span></div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- 设备概览 -->
+  <section id="overview">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">设备概览</span>
+        <h2>它到底是什么样的设备</h2>
+        <p>iPod touch 4 代是苹果在 iPod touch 产品线中承上启下的一代。它没有通话功能，本质上是一台去掉电话模块、体积更小的触屏设备，定位介于音乐播放器与掌上娱乐终端之间。</p>
+      </div>
+      <div class="overview-grid">
+        <article class="overview-card">
+          <h3><span class="dot"></span>外观与手感</h3>
+          <p>机身轻薄，背面为镜面金属质感，正面是一块 3.5 英寸屏幕。整体尺寸适合单手握持，放在口袋里几乎没有负担，这也是当年它受欢迎的重要原因之一。</p>
+        </article>
+        <article class="overview-card">
+          <h3><span class="dot"></span>显示与触控</h3>
+          <p>采用 Retina 级别的显示面板，相比前代在文字锐度和图像细节上有明显提升。触控为电容式多点触控，配合当时的 iOS 界面，操作逻辑直观。</p>
+        </article>
+        <article class="overview-card">
+          <h3><span class="dot"></span>影音能力</h3>
+          <p>支持音乐、视频、播客等常见媒体格式的本地播放，配合耳机接口可以当作纯粹的音乐播放器使用，这也是它至今仍有使用价值的原因之一。</p>
+        </article>
+        <article class="overview-card">
+          <h3><span class="dot"></span>连接与网络</h3>
+          <p>具备 Wi-Fi 无线连接能力，可在有网络的环境下浏览网页、使用部分应用。需要注意的是，受限于年代，它无法胜任现代网页和大型应用的运行需求。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 系统版本 -->
+  <section id="versions" style="background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">系统与版本</span>
+        <h2>能升级到什么程度，为什么重要</h2>
+        <p>系统版本决定了这台设备能装哪些应用、能打开哪些网页。iPod touch 4 代的系统支持已经停止多年，理解这一点是判断它是否适合你的前提。</p>
+      </div>
+      <div class="table-scroll">
+        <table>
+          <thead>
+            <tr>
+              <th>关注点</th>
+              <th>实际情况</th>
+              <th>对使用的影响</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>系统上限</td>
+              <td>官方支持止步于 iOS 6 系列</td>
+              <td>无法升级到更新的 iOS，新应用基本无法安装</td>
+            </tr>
+            <tr>
+              <td>应用兼容</td>
+              <td>仅能运行支持旧系统版本的应用</td>
+              <td>需要依赖历史版本或已下架应用的残留安装包</td>
+            </tr>
+            <tr>
+              <td>网页浏览</td>
+              <td>浏览器内核版本较旧</td>
+              <td>现代网站可能排版错乱或无法正常加载</td>
+            </tr>
+            <tr>
+              <td>账号服务</td>
+              <td>部分在线服务已调整或关闭</td>
+              <td>登录、同步类功能体验受限，需以实际测试为准</td>
+            </tr>
+            <tr>
+              <td>本地播放</td>
+              <td>不依赖网络的核心功能仍可用</td>
+              <td>音乐、本地视频播放是它目前最稳定的用途</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- 使用场景 -->
+  <section id="usage">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">使用场景</span>
+        <h2>现在还能拿它做什么</h2>
+        <p>把它当作一台现代智能设备来要求显然不现实，但如果调整预期，它在若干场景下依然能发挥作用。</p>
+      </div>
+      <div class="usage-grid">
+        <article class="usage-item">
+          <span class="num">01</span>
+          <h3>离线音乐播放器</h3>
+          <p>导入本地音频文件后，它可以作为一台不联网的随身播放器。没有通知打扰，续航表现相对稳定，适合专注听歌或作为运动时的备用设备。</p>
+        </article>
+        <article class="usage-item">
+          <span class="num">02</span>
+          <h3>怀旧游戏与老应用</h3>
+          <p>部分早期触屏游戏在旧系统上运行流畅，操作方式也贴合当时的屏幕尺寸。如果你对那个年代的手游有印象，这台设备能还原一部分体验。</p>
+        </article>
+        <article class="usage-item">
+          <span class="num">03</span>
+          <h3>儿童娱乐设备</h3>
+          <p>由于无法随意安装新应用、也难以接触现代社交软件，部分家长会把它作为限制性较强的娱乐设备使用。前提是提前把内容准备好。</p>
+        </article>
+        <article class="usage-item">
+          <span class="num">04</span>
+          <h3>收藏与展示</h3>
+          <p>对于关注苹果产品演变的人来说，它是产品线中一个有代表性的节点。成色良好、配件齐全的机器具备一定的收藏和陈列价值。</p>
+        </article>
+        <article class="usage-item">
+          <span class="num">05</span>
+          <h3>拆解与学习</h3>
+          <p>结构相对清晰、资料积累较多，常被用于了解早期移动设备的内部设计和维修思路。这类用途需要一定的动手基础和工具。</p>
+        </article>
+        <article class="usage-item">
+          <span class="num">06</span>
+          <h3>备用闹钟与计时</h3>
+          <p>基础的时钟、闹钟、计时功能不依赖网络，长期插电放在桌面上使用，是不少人对这类旧设备的实际用法。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 选购建议 -->
+  <section id="buying" style="background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">选购与检查</span>
+        <h2>入手二手机前应该确认什么</h2>
+        <p>由于产品早已停产，目前能接触到的多为二手或库存机。以下检查点可以帮助你减少踩坑概率。</p>
+      </div>
+      <div class="buy-layout">
+        <ul class="check-list">
+          <li><strong>屏幕状态：</strong>重点看是否有明显划痕、亮斑、暗角或触控失灵区域，触控问题在旧设备上并不少见。</li>
+          <li><strong>电池健康：</strong>询问实际续航表现，若充电后掉电很快，说明电池老化严重，更换成本需提前考虑。</li>
+          <li><strong>按键与接口：</strong>确认电源键、音量键、Home 键回弹正常，耳机孔和充电接口无松动或接触不良。</li>
+          <li><strong>系统与激活：</strong>确认能正常开机进入系统，检查是否被锁在无法解除的状态，避免买到无法使用的机器。</li>
+          <li><strong>配件完整度：</strong>原装数据线、耳机等配件会影响收藏价值，也关系到你能否顺利充电和传输文件。</li>
+          <li><strong>价格合理性：</strong>价格受成色、容量和配件影响较大，建议多对比几家的实际成交情况再决定。</li>
+        </ul>
+        <aside class="notice-box">
+          <h3>需要提前知道的事</h3>
+          <ul>
+            <li>它无法升级到现代系统，不要期待能安装当前主流应用。</li>
+            <li>部分在线服务可能已经无法使用，购买前最好确认你的具体用途是否可行。</li>
+            <li>维修配件来源有限，出现硬件故障时修复难度会高于现代设备。</li>
+            <li>把它当作怀旧或专用设备更合适，而不是日常主力机。</li>
+          </ul>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- 常见问题 -->
+  <section id="faq">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">常见问题</span>
+        <h2>搜索者最常问的几件事</h2>
+        <p>以下回答基于该设备的普遍情况整理，具体表现会因机器状态和使用环境而有所不同。</p>
+      </div>
+      <div class="faq-list">
+        <details open>
+          <summary>iPod touch 4 代还能正常使用吗？</summary>
+          <p>基础功能如本地音乐播放、视频播放、时钟等通常仍可使用。但依赖网络和现代应用的功能会受到明显限制，能否满足需求取决于你的具体用途。</p>
+        </details>
+        <details>
+          <summary>它能升级到最新的 iOS 系统吗？</summary>
+          <p>不能。该机型的官方系统支持早已停止，最高只能停留在较早期的 iOS 版本，因此无法获得新系统带来的功能和安全更新。</p>
+        </details>
+        <details>
+          <summary>可以安装现在的常用应用吗？</summary>
+          <p>大多数现代应用要求更高的系统版本，因此无法直接安装。少数应用可能保留有兼容旧系统的历史版本，但可用性和获取难度都不确定。</p>
+        </details>
+        <details>
+          <summary>现在买一台还值得吗？</summary>
+          <p>如果你有明确的怀旧、收藏或离线播放需求，并且能接受它的功能边界，可以考虑。如果希望它承担日常通讯或上网任务，则不太合适。</p>
+        </details>
+        <details>
+          <summary>充电和传输文件需要注意什么？</summary>
+          <p>建议使用状态良好的数据线和适配器，避免使用来源不明的充电配件。传输文件通常需要通过电脑端工具完成，具体方式与你的电脑系统有关。</p>
+        </details>
+        <details>
+          <summary>和后续几代 iPod touch 相比有什么差别？</summary>
+          <p>后续机型在处理器性能、屏幕尺寸、摄像头和系统支持上都有提升。第四代的特点是体积小巧、设计经典，但整体能力明显弱于后续产品。</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 补充说明 -->
+  <section style="padding-top:0;">
+    <div class="wrap">
+      <div class="tips-band">
+        <h2>写在最后</h2>
+        <p>iPod touch 4 代代表的是移动设备从单一播放器走向多功能触屏终端的那段时期。以今天的标准衡量，它的性能和应用生态都已落后，但在特定用途下仍有存在意义。</p>
+        <p>如果你只是好奇它是什么，上面的内容应该足够回答；如果你打算实际入手一台，建议先明确用途，再按选购清单逐项确认，避免因为情怀而忽略实际使用限制。</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h3>iPod touch 4 代资料站</h3>
+        <p>整理这款经典触屏播放器的基本信息、系统情况与使用建议，帮助关注它的用户做出更清晰的判断。</p>
+      </div>
+      <div>
+        <h3>页面导航</h3>
+        <ul>
+          <li><a href="#overview">设备概览</a></li>
+          <li><a href="#versions">系统与版本</a></li>
+          <li><a href="#usage">使用场景</a></li>
+          <li><a href="#buying">选购建议</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>内容说明</h3>
+        <ul>
+          <li>信息以通用情况整理</li>
+          <li>实际表现因机器而异</li>
+          <li>不构成购买或维修建议</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>内容仅供了解与参考，请结合实际设备情况判断。</span>
+      <span>iPod touch 4 代 · 经典设备回顾</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var links = document.querySelectorAll('.main-nav a[href^="#"]');
+  for (var i = 0; i < links.length; i++) {
+    links[i].addEventListener('click', function(e){
+      var id = this.getAttribute('href').slice(1);
+      var target = document.getElementById(id);
+      if (target) {
+        e.preventDefault();
+        var top = target.getBoundingClientRect().top + window.pageYOffset - 70;
+        window.scrollTo({ top: top, behavior: 'smooth' });
+      }
+    });
+  }
+})();
+</script>
+
+</body>
+                </html>
