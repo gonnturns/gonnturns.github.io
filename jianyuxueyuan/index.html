@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>监狱学园无删减无圣光-动画版本区别与观看选择指南</title>
+<meta name="description" content="监狱学园无删减无圣光版本说明，梳理电视放送版、无修版与漫画原作之间的差异，说明画面表现、内容尺度、常见疑问与理性观看建议。">
+<meta name="keywords" content="监狱学园无删减无圣光,监狱学园,无修版,动画版本区别,漫画原作">
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+<style>
+:root{
+  --ink:#1c1a20;
+  --ink-soft:#4a4550;
+  --paper:#f6f3ee;
+  --card:#ffffff;
+  --line:#e2dcd2;
+  --accent:#c0392b;
+  --accent-deep:#8e2318;
+  --accent-soft:#f7e6e2;
+  --gold:#b58a3c;
+  --shadow:0 8px 24px rgba(28,26,32,.08);
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Source Han Sans SC",sans-serif;
+  background:var(--paper);
+  color:var(--ink);
+  line-height:1.75;
+  font-size:16px;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:inherit;text-decoration:none;}
+img{max-width:100%;display:block;}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 20px;}
+
+/* ---------- 顶部公告条 ---------- */
+.notice{
+  background:var(--ink);
+  color:#d9d3c9;
+  font-size:13px;
+  letter-spacing:.02em;
+}
+.notice .wrap{
+  display:flex;flex-wrap:wrap;gap:8px 18px;
+  align-items:center;justify-content:space-between;
+  padding-top:9px;padding-bottom:9px;
+}
+.notice strong{color:#fff;font-weight:600;}
+.notice span{color:#a89f93;}
+
+/* ---------- 页眉 ---------- */
+header.site-head{
+  background:linear-gradient(180deg,#241f26 0%,#1c1a20 100%);
+  color:#fff;
+  border-bottom:3px solid var(--accent);
+}
+.head-inner{
+  display:flex;align-items:center;justify-content:space-between;
+  gap:20px;padding:18px 0 16px;
+}
+.brand{display:flex;align-items:center;gap:14px;}
+.brand-mark{
+  width:48px;height:48px;flex:0 0 48px;
+  border-radius:10px;
+  background:var(--accent);
+  display:flex;align-items:center;justify-content:center;
+  font-size:22px;font-weight:800;letter-spacing:-1px;
+  box-shadow:0 4px 14px rgba(192,57,43,.5);
+}
+.brand-text b{display:block;font-size:20px;letter-spacing:.04em;}
+.brand-text small{display:block;font-size:12px;color:#a89f93;letter-spacing:.18em;}
+.head-tag{
+  font-size:13px;color:#cfc7bb;
+  border:1px solid #443c47;border-radius:20px;
+  padding:6px 16px;white-space:nowrap;
+}
+
+/* ---------- 导航 ---------- */
+nav.main-nav{
+  background:#2c2630;
+  border-bottom:1px solid #3a333f;
+  position:sticky;top:0;z-index:50;
+}
+nav.main-nav ul{
+  display:flex;flex-wrap:wrap;list-style:none;
+  gap:4px;padding:0;
+}
+nav.main-nav a{
+  display:block;padding:13px 16px;
+  font-size:14.5px;color:#cbc3d0;
+  border-bottom:3px solid transparent;
+  transition:.2s;
+}
+nav.main-nav a:hover{color:#fff;background:#372f3c;}
+nav.main-nav a.on{color:#fff;border-bottom-color:var(--accent);font-weight:600;}
+
+/* ---------- 首屏 ---------- */
+.hero{
+  background:
+    radial-gradient(circle at 82% 18%,rgba(192,57,43,.28),transparent 55%),
+    linear-gradient(160deg,#2b2530 0%,#1c1a20 70%);
+  color:#fff;
+  padding:56px 0 52px;
+  position:relative;
+  overflow:hidden;
+}
+.hero::after{
+  content:"";
+  position:absolute;inset:auto -60px -120px auto;
+  width:340px;height:340px;border-radius:50%;
+  border:1px solid rgba(255,255,255,.07);
+}
+.hero-grid{
+  display:grid;grid-template-columns:1.35fr .95fr;
+  gap:44px;align-items:center;position:relative;z-index:2;
+}
+.hero h1{
+  font-size:34px;line-height:1.32;
+  letter-spacing:.01em;margin-bottom:16px;
+}
+.hero h1 em{
+  font-style:normal;color:#f0a89c;
+  border-bottom:3px solid var(--accent);
+  padding-bottom:2px;
+}
+.hero p.lead{
+  color:#c8c0b6;font-size:16px;
+  max-width:640px;margin-bottom:24px;
+}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px;}
+.btn{
+  display:inline-block;padding:12px 26px;
+  border-radius:8px;font-size:15px;font-weight:600;
+  transition:.2s;border:1px solid transparent;
+}
+.btn-main{background:var(--accent);color:#fff;box-shadow:0 6px 18px rgba(192,57,43,.38);}
+.btn-main:hover{background:var(--accent-deep);transform:translateY(-1px);}
+.btn-ghost{border-color:#544b58;color:#e2dbd2;}
+.btn-ghost:hover{background:#372f3c;border-color:#6d6273;}
+
+.hero-side{
+  background:rgba(255,255,255,.05);
+  border:1px solid rgba(255,255,255,.12);
+  border-radius:14px;padding:22px 22px 20px;
+  backdrop-filter:blur(2px);
+}
+.hero-side h2{
+  font-size:15px;color:#f0a89c;letter-spacing:.1em;
+  margin-bottom:14px;font-weight:600;
+}
+.hero-side dl{display:grid;gap:11px;}
+.hero-side dt{
+  font-size:13px;color:#9d948a;margin-bottom:2px;
+}
+.hero-side dd{font-size:14.5px;color:#eae4dc;line-height:1.6;}
+
+/* ---------- 通用区块 ---------- */
+section{padding:54px 0;}
+.sec-head{
+  display:flex;align-items:flex-end;justify-content:space-between;
+  gap:16px;margin-bottom:28px;flex-wrap:wrap;
+}
+.sec-head h2{
+  font-size:24px;letter-spacing:.02em;
+  display:flex;align-items:center;gap:12px;
+}
+.sec-head h2::before{
+  content:"";width:6px;height:24px;border-radius:3px;
+  background:var(--accent);display:inline-block;
+}
+.sec-head p{font-size:14px;color:var(--ink-soft);max-width:560px;}
+
+/* ---------- 版本对比卡 ---------- */
+.versions{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:20px;
+}
+.v-card{
+  background:var(--card);border:1px solid var(--line);
+  border-radius:14px;padding:24px 22px;
+  box-shadow:var(--shadow);
+  display:flex;flex-direction:column;
+  transition:.25s;
+}
+.v-card:hover{transform:translateY(-3px);border-color:#d5cbbc;}
+.v-card.hot{border-top:4px solid var(--accent);}
+.v-badge{
+  align-self:flex-start;font-size:12px;font-weight:700;
+  padding:4px 12px;border-radius:20px;
+  background:var(--accent-soft);color:var(--accent-deep);
+  letter-spacing:.06em;margin-bottom:14px;
+}
+.v-card h3{font-size:18px;margin-bottom:10px;}
+.v-card p{font-size:14.5px;color:var(--ink-soft);margin-bottom:16px;}
+.v-card ul{list-style:none;font-size:14px;color:var(--ink-soft);margin-top:auto;display:grid;gap:8px;}
+.v-card li{padding-left:18px;position:relative;}
+.v-card li::before{
+  content:"";position:absolute;left:0;top:9px;
+  width:7px;height:7px;border-radius:50%;background:var(--gold);
+}
+
+/* ---------- 差异说明 ---------- */
+.diff{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+.diff-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;}
+.diff-item{
+  border-left:3px solid var(--accent-soft);
+  padding:2px 0 2px 20px;margin-bottom:26px;
+}
+.diff-item:hover{border-left-color:var(--accent);}
+.diff-item h3{font-size:17px;margin-bottom:8px;}
+.diff-item p{font-size:14.5px;color:var(--ink-soft);}
+
+/* ---------- 内容要点表 ---------- */
+.table-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:12px;background:#fff;}
+table{width:100%;border-collapse:collapse;font-size:14.5px;min-width:620px;}
+th,td{padding:14px 18px;text-align:left;border-bottom:1px solid var(--line);}
+th{background:#f0ece4;font-weight:700;color:var(--ink);white-space:nowrap;}
+tbody tr:last-child td{border-bottom:none;}
+tbody tr:hover{background:#faf8f4;}
+td:first-child{font-weight:600;white-space:nowrap;}
+
+/* ---------- 观看建议 ---------- */
+.tips{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;}
+.tip{
+  background:#fff;border:1px solid var(--line);border-radius:12px;
+  padding:20px 22px;display:flex;gap:16px;align-items:flex-start;
+}
+.tip-num{
+  flex:0 0 34px;height:34px;border-radius:8px;
+  background:var(--ink);color:#fff;
+  display:flex;align-items:center;justify-content:center;
+  font-size:15px;font-weight:700;
+}
+.tip h3{font-size:16px;margin-bottom:6px;}
+.tip p{font-size:14px;color:var(--ink-soft);}
+
+/* ---------- 侧栏 + 主内容 ---------- */
+.split{display:grid;grid-template-columns:1fr 320px;gap:36px;align-items:start;}
+.aside-box{
+  background:#fff;border:1px solid var(--line);border-radius:12px;
+  padding:22px;margin-bottom:20px;
+}
+.aside-box h3{
+  font-size:15px;letter-spacing:.08em;color:var(--accent-deep);
+  margin-bottom:14px;padding-bottom:10px;border-bottom:1px dashed var(--line);
+}
+.aside-box ul{list-style:none;display:grid;gap:12px;font-size:14px;color:var(--ink-soft);}
+.aside-box li b{color:var(--ink);display:block;font-size:14.5px;margin-bottom:2px;font-weight:600;}
+.aside-note{font-size:13px;color:#8b8378;line-height:1.7;}
+
+/* ---------- FAQ ---------- */
+.faq{background:#fff;border-top:1px solid var(--line);}
+.faq-list{max-width:860px;}
+details{
+  border:1px solid var(--line);border-radius:10px;
+  background:#fdfcfa;margin-bottom:12px;overflow:hidden;
+}
+details[open]{border-color:#d8cec0;box-shadow:var(--shadow);}
+summary{
+  cursor:pointer;padding:16px 20px;font-size:15.5px;font-weight:600;
+  list-style:none;display:flex;justify-content:space-between;gap:14px;
+  align-items:center;
+}
+summary::-webkit-details-marker{display:none;}
+summary::after{
+  content:"+";font-size:20px;color:var(--accent);font-weight:400;
+  flex:0 0 auto;line-height:1;
+}
+details[open] summary::after{content:"−";}
+details p{
+  padding:0 20px 18px;font-size:14.5px;color:var(--ink-soft);
+}
+
+/* ---------- 页脚 ---------- */
+footer.site-foot{
+  background:#1c1a20;color:#a49b90;
+  padding:46px 0 26px;font-size:14px;
+}
+.foot-grid{
+  display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:34px;
+  padding-bottom:28px;border-bottom:1px solid #322b36;
+}
+.foot-grid h4{color:#fff;font-size:15px;margin-bottom:14px;letter-spacing:.04em;}
+.foot-grid p{line-height:1.8;font-size:13.5px;}
+.foot-grid ul{list-style:none;display:grid;gap:9px;font-size:13.5px;}
+.foot-grid a:hover{color:#f0a89c;}
+.foot-bottom{
+  padding-top:20px;display:flex;flex-wrap:wrap;gap:10px 24px;
+  justify-content:space-between;font-size:12.5px;color:#7d7568;
+}
+
+/* ---------- 响应式 ---------- */
+@media (max-width:980px){
+  .hero-grid{grid-template-columns:1fr;gap:32px;}
+  .versions{grid-template-columns:1fr 1fr;}
+  .diff-grid{grid-template-columns:1fr;gap:8px;}
+  .split{grid-template-columns:1fr;}
+  .foot-grid{grid-template-columns:1fr 1fr;}
+}
+@media (max-width:680px){
+  body{font-size:15.5px;}
+  .head-inner{flex-direction:column;align-items:flex-start;gap:12px;padding:16px 0;}
+  .head-tag{display:none;}
+  .hero{padding:40px 0 38px;}
+  .hero h1{font-size:25px;}
+  section{padding:40px 0;}
+  .sec-head h2{font-size:20px;}
+  .versions{grid-template-columns:1fr;}
+  .tips{grid-template-columns:1fr;}
+  .foot-grid{grid-template-columns:1fr;gap:24px;}
+  nav.main-nav a{padding:11px 12px;font-size:13.5px;}
+  .btn{width:100%;text-align:center;}
+  .hero-actions{flex-direction:column;}
+}
+</style>
+</head>
+<body>
+
+<div class="notice">
+  <div class="wrap">
+    <div><strong>版本说明页</strong> · 本页仅整理公开可查的版本差异信息，不提供任何视频资源</div>
+    <span>内容面向成年读者 · 请理性看待作品尺度</span>
+  </div>
+</div>
+
+<header class="site-head">
+  <div class="wrap head-inner">
+    <div class="brand">
+      <div class="brand-mark">监</div>
+      <div class="brand-text">
+        <b>监狱学园版本资料站</b>
+        <small>VERSION GUIDE</small>
+      </div>
+    </div>
+    <div class="head-tag">电视放送版 · 无修版 · 漫画原作</div>
+  </div>
+</header>
+
+<nav class="main-nav">
+  <div class="wrap">
+    <ul>
+      <li><a class="on" href="#top">首页</a></li>
+      <li><a href="#versions">版本对比</a></li>
+      <li><a href="#diff">差异说明</a></li>
+      <li><a href="#table">要点速览</a></li>
+      <li><a href="#tips">观看建议</a></li>
+      <li><a href="#faq">常见问题</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main id="top">
+
+  <!-- 首屏 -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <h1>关于「<em>监狱学园无删减无圣光</em>」，先弄清版本再谈观看</h1>
+        <p class="lead">
+          很多观众在搜索这个词时，真正想知道的其实是三件事：无删减无圣光版和电视播出版到底差在哪里、
+          这种差异是画面层面的还是剧情层面的、以及值不值得专门去找所谓完整版本。
+          本页把公开可查的版本信息集中整理，帮助你建立清晰的判断，而不是在各类资源站之间反复试错。
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-main" href="#versions">查看版本对比</a>
+          <a class="btn btn-ghost" href="#faq">常见疑问解答</a>
+        </div>
+      </div>
+      <aside class="hero-side">
+        <h2>快速认知</h2>
+        <dl>
+          <div>
+            <dt>作品类型</dt>
+            <dd>日本漫画改编的校园题材动画，以夸张喜剧和强烈反差为主要风格</dd>
+          </div>
+          <div>
+            <dt>关键词指向</dt>
+            <dd>观众希望看到未做画面遮挡处理、内容相对完整的版本</dd>
+          </div>
+          <div>
+            <dt>核心差异</dt>
+            <dd>主要集中在画面呈现方式，而非故事主线的删改</dd>
+          </div>
+          <div>
+            <dt>观看前提</dt>
+            <dd>作品风格与尺度较为特殊，建议成年人自行判断是否适合</dd>
+          </div>
+        </dl>
+      </aside>
+    </div>
+  </section>
+
+  <!-- 版本对比 -->
+  <section id="versions">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>三个容易混淆的版本概念</h2>
+        <p>把「无删减」「无圣光」当成一个词来搜索，往往会得到混乱的结果。拆开看，它们分别对应不同的制作与播出环节。</p>
+      </div>
+      <div class="versions">
+        <article class="v-card">
+          <span class="v-badge">电视放送版</span>
+          <h3>面向公共频道的播出规格</h3>
+          <p>为符合电视播出时段的一般规范，部分画面会通过遮挡、裁切、打光、替换镜头等方式处理，属于播出渠道的常规做法。</p>
+          <ul>
+            <li>画面处理最明显</li>
+            <li>剧情推进通常保持完整</li>
+            <li>获取门槛最低</li>
+          </ul>
+        </article>
+        <article class="v-card hot">
+          <span class="v-badge">无修版 / 无圣光</span>
+          <h3>影像商品中的未处理版本</h3>
+          <p>在光盘等影像商品中，制作方有时会提供去除播出遮挡的版本。所谓「无圣光」，通常就是指这类去除了画面遮挡处理的版本。</p>
+          <ul>
+            <li>画面遮挡被去除</li>
+            <li>镜头内容更接近原稿设计</li>
+            <li>与剧情删减是两个不同概念</li>
+          </ul>
+        </article>
+        <article class="v-card">
+          <span class="v-badge">漫画原作</span>
+          <h3>一切差异的参照基准</h3>
+          <p>动画改编自漫画，原作在叙事节奏、人物刻画和细节铺陈上更为充分。理解原作，才能判断动画哪些改动是必要的、哪些是取舍。</p>
+          <ul>
+            <li>内容体量大于动画</li>
+            <li>细节与支线更完整</li>
+            <li>适合想深入理解作品的读者</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 差异说明 -->
+  <section class="diff" id="diff">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>差异到底体现在哪些方面</h2>
+        <p>把「无删减」简单等同于「内容更多」并不准确。实际差异可以归入下面几个层面。</p>
+      </div>
+      <div class="diff-grid">
+        <div>
+          <div class="diff-item">
+            <h3>画面呈现层面</h3>
+            <p>这是差异最直观的部分。播出时常见的处理包括局部遮挡、画面裁切、亮度调整、镜头替换等。去除这些处理后，画面构图会更接近制作时的原始设计，但这并不改变镜头的数量与顺序。</p>
+          </div>
+          <div class="diff-item">
+            <h3>剧情结构层面</h3>
+            <p>动画改编需要对原作篇幅做压缩与重组。哪些情节保留、哪些合并、哪些调整顺序，属于改编决策，与是否「无修」没有直接关系。也就是说，无修版不会凭空多出被删掉的剧情。</p>
+          </div>
+          <div class="diff-item">
+            <h3>音画规格层面</h3>
+            <p>影像商品版在码率、色彩还原和音轨配置上通常优于电视信号录制版本。这一点对观感的影响，有时甚至比画面遮挡是否去除更明显。</p>
+          </div>
+        </div>
+        <div>
+          <div class="diff-item">
+            <h3>字幕与翻译层面</h3>
+            <p>不同来源的字幕在术语处理、语气还原和注释密度上差别很大。对于以台词节奏和语言反差制造笑点的作品，字幕质量会明显影响理解效果。</p>
+          </div>
+          <div class="diff-item">
+            <h3>观看体验层面</h3>
+            <p>去除遮挡后，部分夸张演出的视觉冲击会更直接。这类处理是否更「好看」，取决于个人偏好，并不存在客观优劣，也不代表作品质量发生变化。</p>
+          </div>
+          <div class="diff-item">
+            <h3>信息核实层面</h3>
+            <p>网络上流传的版本命名并不统一，同一部作品可能被冠以多种说法。判断依据应以官方公布的商品规格与播出信息为准，而不是资源站的标题描述。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 要点速览 -->
+  <section id="table">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>要点速览表</h2>
+        <p>下表把常见疑问与对应的判断结论并列，方便快速比对。</p>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>关注点</th>
+              <th>电视放送版</th>
+              <th>无修版</th>
+              <th>漫画原作</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>画面遮挡</td>
+              <td>存在处理</td>
+              <td>基本去除</td>
+              <td>不存在该问题</td>
+            </tr>
+            <tr>
+              <td>剧情完整度</td>
+              <td>与无修版一致</td>
+              <td>与放送版一致</td>
+              <td>内容体量最大</td>
+            </tr>
+            <tr>
+              <td>音画规格</td>
+              <td>受播出条件限制</td>
+              <td>通常更优</td>
+              <td>静态阅读</td>
+            </tr>
+            <tr>
+              <td>改编幅度</td>
+              <td>相同</td>
+              <td>相同</td>
+              <td>改编参照来源</td>
+            </tr>
+            <tr>
+              <td>适合人群</td>
+              <td>一般了解作品</td>
+              <td>偏好完整画面呈现</td>
+              <td>希望深入理解作品</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- 观看建议 + 侧栏 -->
+  <section id="tips" style="background:#fff;border-top:1px solid var(--line);">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>选择版本时的几条实用建议</h2>
+        <p>与其在版本命名上纠结，不如先明确自己在意的是什么。</p>
+      </div>
+      <div class="split">
+        <div class="tips">
+          <div class="tip">
+            <div class="tip-num">1</div>
+            <div>
+              <h3>先确认自己在意画面还是剧情</h3>
+              <p>如果在意的是故事是否被删，那么换版本并不能解决问题，应该去看原作；如果在意的是画面呈现，版本差异才具备参考意义。</p>
+            </div>
+          </div>
+          <div class="tip">
+            <div class="tip-num">2</div>
+            <div>
+              <h3>优先关注音画规格</h3>
+              <p>码率、色彩与音轨对整体观感的影响往往被低估。同一版本在不同来源下的表现差异，可能比版本本身更大。</p>
+            </div>
+          </div>
+          <div class="tip">
+            <div class="tip-num">3</div>
+            <div>
+              <h3>以官方信息为准</h3>
+              <p>影像商品的规格说明、播出平台的节目信息，是判断版本属性的可靠依据。资源站的标题往往带有营销色彩。</p>
+            </div>
+          </div>
+          <div class="tip">
+            <div class="tip-num">4</div>
+            <div>
+              <h3>注意作品风格与自身接受度</h3>
+              <p>该作品以夸张、强反差的喜剧手法著称，尺度表达较为特殊。选择观看前，建议先了解其风格定位再作决定。</p>
+            </div>
+          </div>
+          <div class="tip">
+            <div class="tip-num">5</div>
+            <div>
+              <h3>留意字幕质量</h3>
+              <p>台词节奏与语言反差是理解笑点的关键。字幕翻译粗糙时，很多设计好的包袱会直接失效。</p>
+            </div>
+          </div>
+          <div class="tip">
+            <div class="tip-num">6</div>
+            <div>
+              <h3>通过正规渠道获取内容</h3>
+              <p>支持正版发行是作品能够持续产出续作与相关企划的基础，也能获得更稳定的观看体验与画质保障。</p>
+            </div>
+          </div>
+        </div>
+
+        <aside>
+          <div class="aside-box">
+            <h3>相关概念</h3>
+            <ul>
+              <li><b>无修版</b>指去除播出遮挡处理的影像版本，常见于光盘商品。</li>
+              <li><b>导演剪辑</b>侧重叙事结构调整，与画面处理是两回事。</li>
+              <li><b>总集篇</b>对已播出内容重新剪辑，篇幅更紧凑。</li>
+              <li><b>原作漫画</b>动画改编的源头，细节与支线更为丰富。</li>
+            </ul>
+          </div>
+          <div class="aside-box">
+            <h3>阅读提示</h3>
+            <p class="aside-note">
+              本页为版本信息整理，不含任何视频、漫画资源链接，也不对第三方来源的合法性作出判断。
+              作品风格与内容尺度较为特殊，请结合自身情况理性选择，并优先通过正规渠道获取内容。
+            </p>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>常见问题</h2>
+        <p>围绕版本差异，观众问得最多的几类问题。</p>
+      </div>
+      <div class="faq-list">
+        <details open>
+          <summary>「无删减」和「无圣光」是同一个意思吗？</summary>
+          <p>两者常被混用，但侧重点不同。「无圣光」一般特指去除了画面遮挡处理；「无删减」则更宽泛，可能被用来描述画面、剧情或时长等多个方面。在实际搜索中，这两个说法经常被资源站当作标签一起使用，因此容易造成误解。判断时应回归到具体的版本规格说明。</p>
+        </details>
+        <details>
+          <summary>无修版会比电视版多出剧情内容吗？</summary>
+          <p>通常不会。无修版与电视放送版在剧情结构、镜头顺序和台本上一般保持一致，差异集中在画面处理方式。如果感觉内容更多，多数情况下是字幕注释、片头片尾或节奏观感带来的错觉，而非真的增加了情节。</p>
+        </details>
+        <details>
+          <summary>想了解完整故事，应该看动画还是漫画？</summary>
+          <p>动画受篇幅限制，会对原作进行压缩与重组。如果希望理解人物关系、支线发展和细节铺垫，原作漫画的信息量明显更大。动画的优势在于演出、配音与配乐带来的综合体验，两者可以互为补充。</p>
+        </details>
+        <details>
+          <summary>不同来源的同一个版本，观感为什么差别很大？</summary>
+          <p>常见原因包括二次压缩导致的画质损失、音轨被重新编码、字幕时间轴偏移等。此外，不同设备的解码与显示设置也会影响最终效果。因此版本名称相同，并不代表实际观看体验一致。</p>
+        </details>
+        <details>
+          <summary>这部作品的风格适合所有人吗？</summary>
+          <p>并不适合。作品以夸张的喜剧手法和强烈的反差感为核心，部分表达方式较为特殊，接受度因人而异。建议在了解其风格定位后再决定是否观看，并注意选择合适的环境与场合。</p>
+        </details>
+        <details>
+          <summary>为什么建议通过正规渠道观看？</summary>
+          <p>正规渠道通常能提供更稳定的画质与音轨、更准确的字幕，也能让制作方获得应有的回报，从而支持后续企划。同时，正规渠道的版本信息清晰可查，能避免在版本判断上反复试错。</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h4>关于本页</h4>
+        <p>
+          本页围绕「监狱学园无删减无圣光」这一搜索需求，整理公开可查的版本差异信息，
+          帮助读者区分电视放送版、无修版与漫画原作之间的不同，建立清晰的判断依据。
+        </p>
+      </div>
+      <div>
+        <h4>内容导航</h4>
+        <ul>
+          <li><a href="#versions">版本对比</a></li>
+          <li><a href="#diff">差异说明</a></li>
+          <li><a href="#table">要点速览</a></li>
+          <li><a href="#tips">观看建议</a></li>
+          <li><a href="#faq">常见问题</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>相关概念</h4>
+        <ul>
+          <li>无修版</li>
+          <li>导演剪辑版</li>
+          <li>总集篇</li>
+          <li>原作漫画</li>
+          <li>影像商品规格</li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>本页为版本信息整理，不提供任何视频或漫画资源，也不对第三方来源作出判断。</span>
+      <span>请理性看待作品尺度，优先通过正规渠道获取内容。</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  // 平滑定位偏移，避免吸顶导航遮挡锚点标题
+  var nav = document.querySelector('nav.main-nav');
+  document.querySelectorAll('a[href^="#"]').forEach(function(link){
+    link.addEventListener('click', function(e){
+      var id = this.getAttribute('href');
+      if(id === '#' || id.length < 2) return;
+      var target = document.querySelector(id);
+      if(!target) return;
+      e.preventDefault();
+      var offset = nav ? nav.offsetHeight + 12 : 12;
+      var top = target.getBoundingClientRect().top + window.pageYOffset - offset;
+      window.scrollTo({ top: top, behavior: 'smooth' });
+    });
+  });
+
+  // 导航高亮：滚动时同步当前区块
+  var sections = Array.prototype.slice.call(document.querySelectorAll('main section[id]'));
+  var navLinks = Array.prototype.slice.call(document.querySelectorAll('nav.main-nav a'));
+  if(sections.length && navLinks.length && 'IntersectionObserver' in window){
+    var observer = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if(!entry.isIntersecting) return;
+        var id = entry.target.getAttribute('id');
+        navLinks.forEach(function(a){
+          a.classList.toggle('on', a.getAttribute('href') === '#' + id);
+        });
+      });
+    }, { rootMargin: '-45% 0px -50% 0px', threshold: 0 });
+    sections.forEach(function(s){ observer.observe(s); });
+  }
+})();
+</script>
+
+</body>
+  </html>
